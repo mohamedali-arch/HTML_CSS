@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+.clip{
+    display: block;
+    width: 49%;
+    position: absolute;
+    right: -108px;
+    top: 139px;
+    height: 125vh;
+    transform: rotate(135deg);
+    background-color: red;
+    clip-path: inset(15% 15% 15% 15%);
+    box-shadow: 1px 1px black;
+}
+.cont{
+    position: absolute;
+    top: 5%;
+   left: 10%;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-rows: 20% 1fr;
+}
+.hed{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    justify-content: space-between;
+    align-items: center;   
+}
+.hed img{
+    width: 130px;
+    height: 110px;
+}
+.hed nav {
+    word-spacing: 30px;
+    padding-left: 20px;
+}
+.hed a{
+    text-decoration:none;
+    text-transform: capitalize;
+    color: black;
+    font-family: sans-serif;
+}
+.hed a:hover{
+    content: "";
+    font-size: x-large;
+    color: red;
+    transition: 0.3s;
+}
+.hed .icons{
+    margin-left: 30px;
+    word-spacing: 40px;
+    font-size: x-large;
+}
+.hed .icons i{
+    color: red;
+}
+.hed .icons i:hover{
+    content: "";
+    color: black;
+    font-size: xx-large;
+    transition: 0.3s;
+}
+.bod{
+    display: grid;
+    padding: 40px;
+    margin-top: 50px;
+    position: relative;
+    grid-template-columns: repeat(2,1fr);
+}
+.bod .text h1{
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.bod .text h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+    text-transform: capitalize;
+}
+.bod .text p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bod .img{ 
+    background-image: url(../CSS\ folder/audi-a3-misano-red-pearl-effect.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+}
+.bod a{
+    display: flex;
+    width: 120px;
+    height: 40px;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-family: cursive;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
